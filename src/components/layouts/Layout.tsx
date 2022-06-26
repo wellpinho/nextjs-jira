@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import Head from "next/head";
+import { Navbar } from "../ui/navbar";
 
 interface IProps {
   title?: string;
@@ -17,7 +18,8 @@ export const Layout = ({ title = "OpenJira", children }: IProps) => {
         <title>{title}</title>
       </Head>
 
-      {/* navbar */}
+      <Navbar />
+
       {/* sidebar */}
 
       <Box
